@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inventory review demo · Momin Ejaz</title>
+  <meta name="description" content="Try a fictional equipment review: verify records, resolve an exception, and create a traceable snapshot.">
+  <link rel="stylesheet" href="../../assets/styles.css?v=20261025-3">
+  <link rel="stylesheet" href="../../assets/demo.css?v=20261025-3">
+<link rel="canonical" href="https://mominejaz.github.io/demos/inventory-review/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Momin Ejaz">
+<meta property="og:title" content="Inventory review demo · Momin Ejaz"><meta property="og:description" content="Try a fictional equipment review: verify records, resolve an exception, and create a traceable snapshot.">
+<meta property="og:url" content="https://mominejaz.github.io/demos/inventory-review/"><meta property="og:image" content="https://mominejaz.github.io/assets/social-preview.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Momin Ejaz. Software for real operational work. Applications, automation, data and reporting.">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Inventory review demo · Momin Ejaz"><meta name="twitter:description" content="Try a fictional equipment review: verify records, resolve an exception, and create a traceable snapshot."><meta name="twitter:image" content="https://mominejaz.github.io/assets/social-preview.png"></head>
+<body class="case-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="shell nav-wrap"><a class="wordmark" href="../../" aria-label="Momin Ejaz home">ME<span>.</span></a><a class="text-link" href="../../projects/inventory-verification/">Read the case study ↗</a></div></header>
+<main id="main" class="shell demo-main">
+  <p class="eyebrow">Interactive concept / fictional data</p>
+  <h1>From review<br>to a trusted record.</h1>
+  <p class="demo-intro">Try a small equipment review. Confirm the records, route an exception, then create a snapshot that retains the decisions behind it.</p>
+  <p class="demo-disclosure">A simplified portfolio demonstration, built for this site. This is not the production application. All records are fictional; nothing is uploaded or saved to a server. Reloading resets the session.</p>
+  <noscript><p>This interactive demo requires JavaScript. The <a href="../../projects/inventory-verification/">case study</a> explains the workflow without it.</p></noscript>
+  <section class="review-app" aria-labelledby="review-title">
+    <div class="review-heading"><div><p class="mini-label">Sample campaign / North yard</p><h2 id="review-title">Equipment verification</h2></div><button id="reset-demo" class="copy-email" type="button">Reset demo</button></div>
+    <ol class="review-steps" aria-label="Review stages"><li id="step-review" aria-current="step">01 Review records</li><li id="step-resolve">02 Resolve exceptions</li><li id="step-snapshot">03 Create snapshot</li></ol>
+    <p id="review-progress" role="status" aria-live="polite"></p>
+    <div id="equipment-list"></div>
+    <div class="review-bottom"><p id="signoff-help">Review all three records before creating a snapshot.</p><button id="signoff" class="button button-primary" type="button" aria-describedby="signoff-help" disabled>Create snapshot</button></div>
+    <section id="snapshot" hidden tabindex="-1"><p class="eyebrow">Review complete</p><h2>Decisions preserved.</h2><p>The snapshot contains the reviewed records and the event history. Editing is locked for this demo session.</p><a id="download-snapshot" class="button button-quiet" download="fictional-inventory-snapshot.json">Download sample JSON</a></section>
+  </section>
+  <div class="demo-details"><section><p class="eyebrow">Traceability</p><h2>Every decision leaves a trail.</h2><ol id="audit-log" aria-label="Review history"></ol></section><aside><p class="eyebrow">Try this path</p><h2>Make the exception visible.</h2><p>Verify the excavator. Flag the loader because its location needs review, then resolve it with a documented decision. Verify the generator and create the snapshot.</p><p>Notice how an unresolved exception blocks completion. The history retains both the flag and its resolution.</p><a class="text-link" href="https://github.com/Mominejaz/mominejaz.github.io/tree/main/dist/demos/inventory-review">View demo page source ↗</a><p class="demo-source"><a href="https://github.com/Mominejaz/mominejaz.github.io/blob/main/dist/assets/demo.js">View workflow logic ↗</a></p></aside></div>
+  <div class="case-next"><a href="mailto:momin_e@hotmail.com">Build a clearer workflow together ↗</a></div>
+</main>
+<script src="../../assets/demo.js?v=20261025-3"></script>
+</body></html>

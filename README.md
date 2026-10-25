@@ -29,3 +29,11 @@ Create a dedicated public repository for this `site` folder, including its `.git
 If the repository is named `<your-github-username>.github.io`, the site will be available at `https://<your-github-username>.github.io/`. A differently named repository is normally served from `https://<your-github-username>.github.io/<repository-name>/`.
 
 Before publishing, review all professional project wording against employer publication requirements.
+
+## Public evidence and assets
+
+- `dist/demos/inventory-review/` is a self-contained, fictional workflow demonstration. It is not the professional application; all state stays in memory in the visitor's browser.
+- `dist/assets/demo.js` implements review, exception resolution, snapshot locking, JSON download, and reset.
+- `content/resume.md` is the reviewed public resume source, using the current contact email and omitting unsupported numeric improvement claims.
+- `tools/build_assets.py` generates the two-page PDF and 1200 x 630 social-sharing image (requires reportlab, Pillow, and Windows Arial fonts). Visually review regenerated assets before committing them.
+- Version query strings on asset URLs prevent returning visitors from mixing old styles with updated markup. Increment them when changing public styles or scripts.
