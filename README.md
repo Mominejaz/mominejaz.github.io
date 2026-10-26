@@ -35,5 +35,5 @@ Before publishing, review all professional project wording against employer publ
 - `dist/demos/inventory-review/` is a self-contained, fictional workflow demonstration. It is not the professional application; all state stays in memory in the visitor's browser.
 - `dist/assets/demo.js` implements review, exception resolution, snapshot locking, JSON download, and reset.
 - `content/resume.md` is the reviewed public resume source, using the current contact email and omitting unsupported numeric improvement claims.
-- `tools/build_assets.py` generates the two-page PDF and 1200 x 630 social-sharing image (requires reportlab, Pillow, and Windows Arial fonts). Visually review regenerated assets before committing them.
+- `tools/build_resume.py` generates the two-page PDF from an explicit source and destination; `tools/build_assets.py` uses it for the public PDF and also generates the 1200 x 630 social-sharing image (requires reportlab, Pillow, and Windows Arial fonts). Visually review regenerated assets before committing them.
 - Version query strings on asset URLs prevent returning visitors from mixing old styles with updated markup. Increment them when changing public styles or scripts.
